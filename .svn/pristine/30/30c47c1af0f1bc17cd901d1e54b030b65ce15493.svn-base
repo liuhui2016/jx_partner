@@ -1,0 +1,11 @@
+menu.home=home
+menu.product=product
+menu.information=information
+menu.download=download
+menu.healthinfo=personal
+header.chinese=Chinese
+header.english=English
+header.register=Register
+header.login=Login
+header.exit=Exit
+header.change.password=Change Password

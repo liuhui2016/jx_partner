@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    	http://www.springframework.org/schema/beans/spring-beans.xsd 
+    	http://www.springframework.org/schema/util 
+    	http://www.springframework.org/schema/util/spring-util.xsd"
+    default-lazy-init="true">
+
+    <description>静态信息定义 </description>
+
+    <!-- =================================================================== -->
+    <!-- 操作类型定义，原枚举模式迁移 -->
+    <!-- 注意，维护以下数据，只需要新增、修改，修改时不要修改key值 -->
+    <!-- =================================================================== -->
+    <util:map id="enumMapping">
+        <!-- 业务日志操作类型 -->
+        <entry key="operationType">
+            <util:map key-type="java.lang.Integer">
+                <entry key="101" value="用户管理" />
+                <entry key="102" value="角色管理" />
+                <entry key="103" value="权限管理" />
+                <entry key="104" value="域管理" />
+                <entry key="105" value="公告管理" />
+                <entry key="106" value="资源管理" />
+                <entry key="107" value="登陆日志" />
+                <entry key="108" value="邮件管理" />
+
+                <entry key="201" value="请假申请" />
+                <entry key="202" value="请假审批" />
+                <entry key="203" value="假期变更" />
+                <!-- 数据维护 -->
+                <entry key="501" value="系统配置数据维护" />
+            </util:map>
+        </entry>
+        <!--公告类型 -->
+        <entry key="announcementType">
+            <util:map key-type="java.lang.Integer">
+                <entry key="101" value="公告" />
+                <entry key="102" value="新闻" />
+                <entry key="103" value="其它" />
+            </util:map>
+        </entry>
+    </util:map>
+
+
+    <!-- =================================================================== -->
+    <!-- POI 定义导入导出excel的数据库字段、实名、类型对应集合 -->
+    <!-- =================================================================== -->
+    <util:map id="poiMapping">
+        <entry key="resource">
+            <util:list>
+                <value>resString,资源串,S</value>
+                <value>label,名称,S</value>
+                <value>description,描述,S</value>
+            </util:list>
+        </entry>
+        <entry key="role">
+            <util:list>
+                <value>name,名称,S</value>
+                <value>createBy,创建者,S</value>
+                <value>createTime,创建时间,D</value>
+                <value>description,描述,S</value>
+            </util:list>
+        </entry>
+        <entry key="user">
+            <util:list>
+                <value>username,登录名,S</value>
+                <value>realName,姓名,S</value>
+                <value>phone,电话,S</value>
+                <value>email,电子邮件,S</value>
+                <value>createBy,创建者,S</value>
+                <value>createTime,创建时间,D</value>
+                <value>enabled,账户可用,B</value>
+                <value>accountLocked,帐号锁定,B</value>
+                <value>accountExpired,帐号过期,B</value>
+                <value>credentialsExpired,证书过期,B</value>
+            </util:list>
+        </entry>
+        <entry key="domain">
+            <util:list>
+                <value>label,域名称,S</value>
+                <value>code,域编码,S</value>
+                <value>description,描述,S</value>
+            </util:list>
+        </entry>
+        <entry key="authority">
+            <util:list>
+                <value>label,权限名称,S</value>
+                <value>menu,是否菜单,B</value>
+            </util:list>
+        </entry>
+        <entry key="announcement">
+            <util:list>
+                <value>title,公告名称,S</value>
+                <value>content,公告内容,S</value>
+                <value>start,开始时间,D</value>
+                <value>end,结束时间,D</value>
+                <value>type,类型,I</value>
+            </util:list>
+        </entry>
+        <entry key="journal">
+            <util:list>
+                <value>operatorName,操作人,S</value>
+                <value>domainLabel,所属区域,S</value>
+                <value>operationName,业务模块,S</value>
+                <value>operatorIpAddr,IP地址,S</value>
+                <value>creatTime,创建时间,D</value>
+                <value>description,描述,S</value>
+            </util:list>
+        </entry>
+    </util:map>
+
+</beans>

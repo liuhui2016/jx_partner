@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator Definition 1.0//EN"
+        "http://struts.apache.org/dtds/xwork-validator-definition-1.0.dtd">
+
+<!-- START SNIPPET: validators-default -->
+<validators>
+    <validator name="required" class="com.game.modules.validator.validators.RequiredFieldValidator" />
+    <validator name="requiredstring" class="com.game.modules.validator.validators.RequiredStringValidator" />
+    <validator name="int" class="com.game.modules.validator.validators.IntRangeFieldValidator" />
+    <validator name="long" class="com.game.modules.validator.validators.LongRangeFieldValidator" />
+    <validator name="short" class="com.game.modules.validator.validators.ShortRangeFieldValidator" />
+    <validator name="double" class="com.game.modules.validator.validators.DoubleRangeFieldValidator" />
+    <validator name="date" class="com.game.modules.validator.validators.DateRangeFieldValidator" />
+    <validator name="expression" class="com.game.modules.validator.validators.ExpressionValidator" />
+    <validator name="fieldexpression" class="com.game.modules.validator.validators.FieldExpressionValidator" />
+    <validator name="email" class="com.game.modules.validator.validators.EmailValidator" />
+    <validator name="url" class="com.game.modules.validator.validators.URLValidator" />
+    <validator name="visitor" class="com.game.modules.validator.validators.VisitorFieldValidator" />
+    <validator name="conversion" class="com.game.modules.validator.validators.ConversionErrorFieldValidator" />
+    <validator name="stringlength" class="com.game.modules.validator.validators.StringLengthFieldValidator" />
+    <validator name="regex" class="com.game.modules.validator.validators.RegexFieldValidator" />
+    <validator name="conditionalvisitor" class="com.game.modules.validator.validators.ConditionalVisitorFieldValidator" />
+</validators>
+<!-- END SNIPPET: validators-default -->

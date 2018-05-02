@@ -1,0 +1,132 @@
+@CHARSET "GBK";
+
+.mtab th {
+    font-size: 12px; font-weight: bold; background: url("../images/tab_bg.gif") repeat scroll 0 0 transparent;
+}
+
+.p14 {
+    font-size: 14px
+}
+
+.title {
+    font-family: "ËÎÌו"; font-size: 18px;
+}
+
+h2 {
+    margin: 0; padding: 0; font-size: 15px; color: #64650b;
+}
+
+.subtitle {
+    font-family: "ËÎÌו"; font-size: 12px; font-weight: bold
+}
+
+.p14bold {
+    font-size: 14px; font-weight: bold; background: url("../images/tab_bg.gif") repeat scroll 0 0 transparent;
+}
+
+input {
+    font-size: 12px
+}
+
+select {
+    font-size: 12px
+}
+
+a {
+    color: #000000; text-decoration: underline
+}
+
+a:hover {
+    color: #000099; text-decoration: none
+}
+
+.STYLE1 {
+    font-size: 12px
+}
+
+.STYLE4 {
+    font-size: 12px; color: #1F4A65; font-weight: bold;
+}
+
+a:link {
+    font-size: 12px; color: #06482a; text-decoration: none;
+}
+
+a:visited {
+    font-size: 12px; color: #06482a; text-decoration: none;
+}
+
+a:hover {
+    font-size: 12px; color: #FF0000; text-decoration: underline;
+}
+
+a:active {
+    font-size: 12px; color: #FF0000; text-decoration: none;
+}
+
+.mainC {
+    margin: 25px 5px 0 5px;
+}
+
+.mtab {
+    width: 100%; margin: 0 auto;
+}
+
+.mtab td,th {
+    padding: 5px; font-size: 12px; border: 1px solid #cecece
+}
+
+.title {
+    font-size: 14px; font-weight: bold; line-height: 20px; padding: 4px 0 0 6px;
+}
+
+.small-font {
+    font-size: 12px; color: red;
+}
+
+.fontredcolor {
+    color: red
+}
+
+.titt {
+    border-bottom: 1px solid #64650b; padding: 10px 0 1px 0; margin: 0 6px;
+}
+
+.titt img {
+    margin-right: 5px;
+}
+
+.mtab .lefttit {
+    width: 20%; text-align: right; padding-right: 5px;
+}
+
+.mtab .righttit {
+    width: 80%; text-align: left;padding-left: 5px;
+}
+#guize{line-height: 18px;}
+.btntbl {
+    width: 100%; text-align: center; margin-top: 10px;
+}
+
+.page {
+    width: 99%; padding-left: 5px;
+}
+
+.page td {
+    font-size: 12px;
+}
+
+.filters {
+    margin: 0 6px;
+}
+.reportForm{  margin: 25px 0 5px 5px;width: 99%;}
+
+.actionMessage{    background: none repeat scroll 0 0 yellow;
+    font-size: 13px;
+    margin-right: 60px;
+    margin-top: 5px;
+    padding: 13px;
+    text-align: center;}
+    .close{font-family: verdana;}
+    
+    #closeimg{}

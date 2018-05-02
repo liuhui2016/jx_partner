@@ -1,0 +1,114 @@
+body {font-family:"å¾®è½¯é›…é»‘";font-size: 12px;line-height: 22px;margin: 0px;padding: 0px; }
+div,td,ul,dd,li,a,dl,dt{padding:0px;margin:0px;text-decoration:none;word-break:break-all;font-family: "å®‹ä½“";list-style:none;font-size:12px;}
+p{ padding:2px;margin:0px auto;text-decoration:none;word-break:break-all;}
+table{margin:0 auto;border-collapse:collapse;}
+h1,h2,h3,h4,h5,h6{ font-size:12px; font-weight:400; margin:0px; padding:0px; line-height:150%; text-decoration:none;}
+img{border:0px solid; font-size:0px}
+input,button,select,textarea,form{outline:none; margin:0px; padding:0px;}
+.cboth{ clear:both; height:0px; font-size:0px; margin:0px; padding:0px; line-height:0px;}
+
+
+.logo{width:920px;margin:auto;height:64px;margin-top:20px;}
+.logo h1{float:left}
+.logo h2{float:right}
+
+
+.huiyuan{width:920px;height:400px;  margin:auto;margin-top:15px;border:1px solid #dedede;}
+.huiyuan .huiher{border-bottom:1px solid #dedede;height:50px;padding:5px 15px;width:951px;}
+.huiyuan .huiher h1{float:left}
+.huiyuan .huiher h1 span{font-size:14px;font-weight:bold;font-family:"Î¢ÈíÑÅºÚ";line-height:30px;}
+.huiyuan .huiher p{float:right;height:37px;margin-top:8px;}
+.huiyuan .huisr{padding:5px 0px;}
+.huiyuan .huisr .huiseleft{float:left;width:420px;padding:1px 0px 0px 50px;}
+.huiyuan .huisr .huiseleft li{height:35px;line-height:35px; margin-bottom:10px;}
+.huiyuan .huisr .huiseleft li input{height:25px;line-height:25px;width:230px;border:1px solid #dedede}
+.huiyuan .huisr .huiseleft li input.huyan{width:161px;height:41px;background:url(../images/huyan_12.jpg) no-repeat;border:none;margin:10px 0px 0px 80px;}
+.huiyuan .huisr .huiseleft li.fuxian{height:25px;line-height:25px;margin-top:20px;margin-left:84px;}
+.huiyuan .huisr .huiseleft li.fuxian input{width:14px;height:14px;border:none;}
+.huiyuan .huisr .huiseleft li.quyu textarea{width:470px;padding:5px;border:1px solid #dedede}
+.huiyuan .huisr .huiseright{float:left;width:380px;text-align:center;padding-top:50px;}
+.huiyuan .huisr .huiseright h4{line-height:25px;color:#999999; margin:5px 0px 5px 0px;}
+.huiyuan .huisr .huiseright h4 span{font-size:16px;color:#ff6500;font-weight:600}
+.huiyuan .huisr .huiseright h5{line-height:25px;font-size:12px;color:#666666;}
+.huiyuan .huisr h2{float:left;width:42px;background:url(../images/login/huit_03.jpg) no-repeat;height:232px;}
+.huiyuan .huiys{padding:15px 0px;}
+.huiyuan .huiys ul{text-align:center}
+.huiyuan .huiys li{height:36px;line-height:36px;vertical-align:middle;font-size:16px; font-family:"Î¢ÈíÑÅºÚ";}
+.huiyuan .huiys li a{color:#0066FF}
+.huiyuan .huiys li img{height:36px;vertical-align:middle;margin-right:5px;}
+.huiyuan .huiys li span{color:#ff6500}
+
+
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+p{line-height:24px}
+a{color:#333;text-decoration:none;}
+a:hover{color:#ffffff; text-decoration:underline;}
+
+.login ul{/*background:url(../images/line.png) repeat-x;*/ padding-top:10px; border-top:1px solid #fff}
+.login ul a{ color:#005cb1}
+.login .id input,.login .pw input,.in_id,.in_mo,.reg_input,.reg_input_pic{background-color:#FFF; border:1px solid #d5cfc2;  font-size:14px; font-weight:bold; vertical-align:middle}
+.login .id input,.login .pw input{width:170px; height:30px;margin:0 5px 5px 0; line-height:30px; padding:0 5px;}
+.login .id input:hover,.login .pw input:hover,.in_id:hover,.in_mo:hover,.reg_input:hover,.reg_input_pic:hover{border:1px solid #005cb1;background-color:#F2FAFF;}
+.l_button,.r_button{background:url(../images/login/login_button.gif) no-repeat; width:118px; height:39px; border:none; cursor:pointer; display:block; float:left; text-indent:-9000px}
+.l_button{background-position:0 -60px;}
+.r_button{background-position:-138px -60px; margin-right:4px}
+.l_button:hover{background-position:0 0;}
+.r_button:hover{background-position:-138px 0;}
+.f_reg_but{margin:10px 0 0 115px}
+.f_login_but{margin:10px 0 0 80px}
+
+.reg{width:460px; font-size:14px;line-height:25px; overflow:hidden;}
+.reg dl{padding-left:10px; font-size:14px;}
+.reg dl dt{ margin-top:15px}
+.reg dl dd{padding:3px 0}
+.reg .title{width:100px; display:inline-block; text-align:right; padding-right:10px}
+.reg_input_pic{width:80px;}
+.in_pic_s{margin-left:83px}
+.reg .img{position:absolute}
+.onShow,.onFocus,.onError,.onCorrect,.onLoad{background:url(../images/reg_bg.png) no-repeat 3000px 3000px;padding-left:30px; font-size: 12px; height:25px; width:124px; display:inline-block; line-height:25px; vertical-align:middle; overflow:hidden; margin-left:6px}
+.onShow{color:#999; padding-left:0px}
+.onFocus{background-position:0px -30px; color:#333}
+.onError{background-position:0px -60px; color:#333}
+.onCorrect{background-position:0px 0; text-indent:-9000px}
+.onLoad{background-position:0px 0}
+.reg_m{margin-left:90px}
+.clew_txt{display:inline-block; padding:7px  0 0 15px; font-size:12px;}
+
+.id input,.pw input,.in_id,.in_mo,.reg_input,.reg_input_pic{_behavior:url(js/Round_htc.htc);-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; height:25px;}
+.user_button a,.pay_but{_behavior:url(js/Round_htc.htc);-moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px;}
+
+#one1,#one2{display:block; background-color:#e9eed8; padding:5px 0; text-align:center; clear:both; cursor:pointer}
+#one2{margin-top:15px}
+#one1:hover,#one2:hover{background-color:#d4dfb0}
+#one1 span,#one2 span{color:#F00}
+
+.xiazai{ width:100%; height:35px; float:left;}
+.xiazai h1{width:960px; height:30px; border-bottom:1px solid #DEDEDE; margin:0 auto; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px;}
+
+.khd{width:100%; float:left;}
+.apkxz{
+padding:5px 0px 5px 0px;
+font-family:"Î¢ÈíÑÅºÚ";
+font-size:18px;
+margin-top:10px;
+display:block;
+width:80%;
+background-color:#A6D674;
+text-decoration:none;
+color:#FFFFFF;
+text-align:center;
+}
+.forapk{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+text-align:center;
+}
+
+.footer{width:920px;margin:auto;margin-top:10px;}
+.footer .foote{width:920px;margin:auto;background:url("http://www.flyever.com.cn/dhs/images/dise_03.jpg") no-repeat;height:82px; text-align:center;padding-top:30px;}
+.footer .foote p{line-height:24px;}
+
+#clock_a{
+padding:15px 0 0 0;
+}

@@ -1,0 +1,2306 @@
+﻿@charset "utf-8";
+*{margin:0px;padding:0px;}
+#layout{
+margin:0 auto;
+width:915px;
+}
+
+#top{
+width:960px;
+height:60px;
+background-image:url("http://www.flyever.com.cn/fly/images/tbg.jpg");
+float:left;
+}
+
+#logo{
+width:120px;
+height:60px;
+float:left;
+}
+
+#ad{
+padding:15px 0px 0px 5px;
+font-size:12px;
+width:180px;
+height:31px;
+line-height:15px;
+float:left;
+}
+#zhuce{
+padding:10px 10px 0px 0px;
+font-size:12px;
+float:right;
+}
+.hus{color:#666666; text-decoration:none;}
+.jus{color:#FF6600; text-decoration:none;}
+.jus:hover{text-decoration:underline;}
+#gwc{
+font-family:"微软雅黑";
+font-size:14px;
+padding:20px 0px 0px 20px;
+width:314px;
+height:30px;
+float:left;
+}
+#gwc span{
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+color:#FF0000;
+}
+#login{
+width:220px;
+height:50px;
+float:right;
+}
+#login span{
+padding-top:9px;
+text-align:right;
+width:110px;
+height:30px;
+float:left;
+}
+#dh_left,#dh_right{
+width:3px;
+height:43px;
+float:left;
+}
+#dh_left{
+background-image:url("http://www.flyever.com.cn/fly/images/dh_left.gif");
+}
+#dh_right{
+background-image:url("http://www.flyever.com.cn/fly/images/dh_right.gif");
+}
+#dh_mid{
+padding-left:40px;
+width:914px;
+height:43px;
+background-image:url("http://www.flyever.com.cn/fly/images/dh_mid.gif");
+float:left;
+}
+#dht{
+width:900px;
+height:43px;
+float:left;
+}
+#dht li{ list-style:none; text-align:left;float:left;}
+#dht li a{
+font-family:"微软雅黑";
+font-size:14px;
+color:#FFFFFF;
+text-decoration:none;
+display:block;
+padding:10px 20px 0px 20px;
+height:33px;
+background-image:url("http://www.flyever.com.cn/fly/images/dh_mid.gif");
+float:left;
+}
+#dht li a:hover{
+background-image:url("http://www.flyever.com.cn/fly/images/dhx.gif");
+}
+#dht li a.hover{
+color:#000000;
+background-image:url("http://www.flyever.com.cn/fly/images/dhbg.gif");
+}
+#hdp{float:left;}
+
+#yhdp{width:960px;float:left; margin:10px 0px 10px 0px;}
+.yhd{width:958px; height:200px; border:1px solid #F0F0F0; background-image:url("http://www.flyever.com.cn/fly/images/ybg.jpg"); float:left;}
+
+#div1 {position:relative; width:958px; height:100px; margin: 60px auto 0;}
+#div1 a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#fff; font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#div1 a:hover {border: 1px solid #eee; background: #000; }
+#div1 .blue {color:blue;}
+#div1 .red {color:red;}
+#div1 .yellow {color:yellow;}
+
+.yfh{ margin-left:10px;width:196px; height:200px; border:1px solid #F0F0F0; float:left; overflow:hidden;}
+.yfh li{width:191px; height:20px;font-size:12px;padding:5px 0px 0px 5px; float:left; list-style:none;}
+
+#imgPlay {
+	MARGIN: 10px auto; OVERFLOW: hidden; WIDTH: 960px; ZOOM: 1; POSITION: relative; HEIGHT: 304px;
+}
+#imgPlay .imgs IMG {
+	BORDER-RIGHT: #F0F0F0 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #F0F0F0 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #F0F0F0 1px solid; WIDTH: 956px; PADDING-TOP: 1px; BORDER-BOTTOM: #F0F0F0 1px solid
+}
+#imgPlay .imgs LI {
+	FLOAT: left; POSITION: relative; list-style:none;
+}
+#imgPlay .imgs {
+	WIDTH: 5760px
+}
+#imgPlay .btn {
+	RIGHT: 12px; OVERFLOW: hidden; WIDTH: 112px; BOTTOM: 12px; TEXT-INDENT: -9999px; POSITION: absolute; HEIGHT: 29px;
+}
+#imgPlay .btn A {
+	BACKGROUND: url("http://www.flyever.com.cn/fly/images/bg.png") no-repeat;BACKGROUND-POSITION: 0px 0px; DISPLAY: block; WIDTH: 112px; HEIGHT: 29px;
+}
+#imgPlay .btn A:hover {
+	BACKGROUND: url("http://www.flyever.com.cn/fly/images/bg.png") no-repeat;BACKGROUND-POSITION: 0px -30px;
+}
+#imgPlay .prev {
+	BACKGROUND: url("http://www.flyever.com.cn/fly/images/imgPlayer.gif") no-repeat 0px 0px; LEFT: 1px; WIDTH: 46px; CURSOR: pointer; TEXT-INDENT: -9999px; POSITION: absolute; TOP: 110px; HEIGHT: 81px
+}
+#imgPlay .next {
+	BACKGROUND: url("http://www.flyever.com.cn/fly/images/imgPlayer.gif") no-repeat 0px 0px; LEFT: 1px; WIDTH: 46px; CURSOR: pointer; TEXT-INDENT: -9999px; POSITION: absolute; TOP: 110px; HEIGHT: 81px
+}
+#imgPlay .next {
+	BACKGROUND-POSITION: right 0px; RIGHT: 1px; LEFT: auto
+}
+#imgPlay .num {
+	DISPLAY: inline; LEFT: 400px; POSITION: absolute; TOP: 275px; HEIGHT: 19px
+}
+#imgPlay .num SPAN {
+	DISPLAY: inline-block; BACKGROUND: url("http://www.flyever.com.cn/fly/images/imgPlayer.gif") no-repeat -19px -83px; MARGIN: 0px 2px; OVERFLOW: hidden; WIDTH: 14px; CURSOR: pointer; LINE-HEIGHT: 0; HEIGHT: 13px
+}
+#imgPlay .num SPAN.on {
+	BACKGROUND-POSITION: 1px -83px
+}
+#imgPlay .num .lc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 13px; PADDING-TOP: 3px; HEIGHT: 16px
+}
+#imgPlay .num .mc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px;  FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 13px; PADDING-TOP: 3px; HEIGHT: 16px
+}
+#imgPlay .num .rc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url("http://www.flyever.com.cn/fly/images/lc.png") no-repeat; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 13px; PADDING-TOP: 3px; HEIGHT: 16px
+}
+
+#imgPlay .num .rc {
+	BACKGROUND: url("http://www.flyever.com.cn/fly/images/rc.png") no-repeat
+}
+#imgPlay #numInner {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 3px; POSITION: absolute; TOP: 275px; TEXT-ALIGN: center
+}
+.cp{
+margin-bottom:10px;
+width:958px; 
+height:630px;
+border:1px solid #F0F0F0;
+float:left;
+}
+.cpline{
+width:960px; height:3px; background-color:#343232; margin-bottom:10px; border-bottom:3px solid #006600; overflow:hidden;float:left;
+}
+
+#bz{
+width:958px; height:85px; border:1px solid #F0F0F0; float:left; overflow:hidden;
+}
+.bzi{
+width:190px;
+height:130px;
+float:left;
+}
+.bzi dt{
+text-align:center;
+font-size:12px;
+margin-top:6px;
+margin-bottom:5px;
+padding-left:28px;
+width:162px;
+height:37px;
+float:left;
+overflow:hidden;
+}
+.bzi dt img{
+float:left;
+}
+.bzi dt span{
+padding-top:16px;
+width:103px;
+height:20px;
+border-bottom:1px solid #dddddd;
+font-weight:bold;
+float:left;
+}
+.bzi dd{
+font-size:12px;
+padding-left:60px;
+padding-top:5px;
+width:130px;
+height:15px;
+text-align:left;
+font-weight:normal;
+float:left;
+}
+.bzi dd a,.linkzi a,#jiangj li a{
+color:#333333;
+text-decoration:none;
+}
+.bzi dd a:hover,.linkzi a:hover,#jiangj li a:hover{
+color:#CC0000;
+text-decoration:underline;
+}
+.bzline{
+width:2px;
+height:143px;
+background-image:url("http://www.flyever.com.cn/fly/images/bzline.jpg");
+float:left;
+}
+.qfd{
+clear:both;
+}
+.thh{width:948px; height:50px; background-color:#F8F8F8; margin:0 auto; text-align:center;}
+.link{width:948px; height:25px; padding-top:10px; font-size:12px; border-top:1px solid #f0f0f0;margin:0 auto;position:relative;}
+.link a{
+color:#666666;
+text-decoration:none;
+}
+.link a:hover{
+color:#A60233;
+text-decoration:underline;
+}
+
+.hb{
+margin:10px 0px 10px 0px;
+padding-top:5px;
+width:958px;
+height:38px;
+border:1px solid #F0F0F0;
+float:left;
+}
+.hb dt{
+padding-top:4px;
+text-align:center;
+font-family:"微软雅黑";
+font-size:16px;
+width:97px;
+height:27px;
+border-right:1px solid #f0f0f0;
+float:left;
+}
+.hb dd{
+margin-left:5px;
+width:88px;
+height:31px;
+border:1px solid #f0f0f0;
+float:left;
+overflow:hidden;
+}
+
+#copy{
+padding-top:15px;text-align:center;color:#D6D6D6;font-size:12px;border-top:1px solid #f0f0f0;width:960px; height:15px; background-image:url("http://www.flyever.com.cn/fly/images/copy.jpg");float:left;
+}
+#copy a{
+color:#666666;
+text-decoration:none;
+}
+#copy a:hover{
+color:#A60233;
+text-decoration:underline;
+}
+.about{
+text-align:center;
+padding-top:10px;
+width:960px;
+height:10px;
+font-size:12px;
+line-height:10px;
+color:#999999;
+float:left;
+}
+.about a{
+color:#999999;
+text-decoration:none;
+}
+.about a:hover{
+text-decoration:underline;
+}
+#fl{
+font-size:14px; padding-top:5px; font-family:"微软雅黑";
+width:960px; height:25px; border-bottom:1px solid #f0f0f0; float:left; margin-bottom:10px;}
+#fl a{
+color:#000000;
+text-decoration:none;
+}
+#fl a:hover{
+color:#A60233;
+text-decoration:underline;
+}
+.xfl{
+margin-bottom:10px;
+font-family:"微软雅黑";
+font-size:14px;
+width:960px;
+height:35px;
+border-bottom:2px solid #e0e0e0;
+float:left;
+}
+.xfl span{
+padding-top:5px;
+float:left;
+}
+.xfl ul{
+height:28px;
+float:right;
+}
+.xfl li *{vertical-align:middle;}
+.xfl li{
+margin-right:5px;
+list-style:none;
+height:28px;
+float:left;
+overflow:hidden;
+}
+.pro{
+margin-bottom:10px;
+width:920px;
+float:left;
+}
+.pro li{
+margin-bottom:14px;
+margin-left:20px;
+width:210px;
+list-style:none;
+float:left;
+}
+.pro li.no{
+margin-left:0px;
+}
+.cpk{
+padding:10px;
+width:203px;
+height:235px;
+border:1px solid #e0e0e0;
+float:left;
+}
+.yy{
+width:225px;
+height:6px;
+background-image:url("http://www.flyever.com.cn/fly/images/yy.gif");
+float:left;
+overflow:hidden;
+}
+.bt{
+font-size:14px;
+color:#666666;
+width:203px;
+height:35px;
+line-height:18px;
+float:left;
+overflow:hidden;
+}
+.bt a{color:#666666; text-decoration:none;}
+.bt a:hover{color:#FF3300; text-decoration:underline;}
+.cpimg{
+width:201px;
+height:148px;
+border:1px solid #e0e0e0;
+float:left;
+}
+.jg{
+margin-top:10px;
+width:123px;
+height:40px;
+float:left;
+}
+.jg p{
+font-size:12px;
+width:123px;
+height:20px;
+float:left;
+}
+.jg p span{
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+color:#ff0000;
+}
+.kk{
+margin-top:10px;
+width:80px;
+height:29px;
+float:left;
+}
+#list_tit{
+padding:10px 0px 0px 5px;
+font-size:12px;
+width:955px;
+height:20px;
+border-bottom:1px solid #e0e0e0;
+float:left;
+}
+#list_tit a{
+color:#333333;
+text-decoration:none;
+}
+#list_tit a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+#list_left{
+margin-top:10px;
+width:750px;
+float:left;
+}
+
+#listhdp{
+width:350px;
+float:left;
+}
+#preview{ float:left;text-align:center; width:350px;}
+.jqzoom{width:348px; height:261px; border:1px solid #e0e0e0; position:relative; overflow:hidden;}
+
+.zoomdiv{ left:859px; height:400px; width:400px;}
+.list-h{margin:0; padding:0;text-align:left; float:left;}
+.list-h li{ float:left;}
+#spec-n5{width:350px;  float:left;}
+#spec-list{ width:325px; float:left; overflow:hidden;display:inline; margin-top:10px;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:62px;}
+#spec-list ul li img{ padding:2px ; border:1px solid #ccc; width:50px; height:50px;}
+
+
+.jqzoom{position:relative;padding:0;}
+.zoomdiv{z-index:100;position:absolute;top:1px;left:0px;width:500px;height:500px;background:url("http://www.flyever.com.cn/fly/css/i/loading.gif") #fff no-repeat center center;border:1px solid #e4e4e4;display:none;text-align:center;overflow: hidden;}
+.bigimg{width:800px;height:800px;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:50px;height:50px;border:1px solid #aaa;background:#FEDE4F 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:move;}
+#spec-list{ position:relative; width:322px; margin-right:6px;}
+#spec-list div{ margin-top:0;margin-left:-30px; *margin-left:0;}
+
+#list_mid{
+padding-left:5px;margin-left:10px;width:385px; height:319px; float:left;
+}
+#list_jg{
+width:380px;
+background-color:#FFFFFF;
+float:left;
+}
+#list_jg li{
+font-size:12px;
+color:#999999;
+padding-top:10px;
+width:380px;
+height:20px;
+list-style:none;
+float:left;
+}
+#list_jg li.jg,#list_jg li.pr{
+height:30px;
+background-image:url("http://www.flyever.com.cn/fly/images/list_jg.gif");
+}
+#list_jg li.jg{font-size:14px;color:#000000;}
+##list_jg li.pr{ font-size:12px;}
+#list_jg li span{
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+color:#FF0000;
+}
+#listgo{
+padding:10px 0px 0px 20px;
+margin-top:5px;
+width:358px;
+height:110px;
+background-color:#f7f7f7;
+border:1px solid #e0e0e0;
+float:left;
+}
+#listgo li{
+margin-top:10px;
+font-size:12px;
+color:#999999;
+width:358px;
+height:27px;
+list-style:none;
+float:left;
+}
+#listms{
+width:750px;float:left; margin-top:10px;
+}
+
+
+
+
+.Menubox1 {
+    padding-left:10px;
+	height:32px;
+	overflow:hidden;
+	background-image:url("http://www.flyever.com.cn/fly/images/libg.jpg");
+}
+.Menubox1 ul {
+	list-style:none;
+	background-image:url("http://www.flyever.com.cn/fly/images/hui.jpg");
+	margin:0;
+	padding:0;
+	position:relative;
+}
+.Menubox1 ul li {
+	font: 15px/35px "微软雅黑","华文细黑",Tahoma,Sans-serif;
+	float:left;
+	display:block;
+	cursor: pointer;
+	width:130px;
+	margin-right:10px;
+	text-align:center;
+	color:#8E8E8E;
+	background-image:url("http://www.flyever.com.cn/fly/images/hui.jpg");
+}
+
+.Menubox1 ul li.hover {
+	color:#82B80A;
+	font-weight:bold;
+	background-image:url("http://www.flyever.com.cn/fly/images/hong.jpg");
+}
+
+.Contentbox1 *{font-weight:normal;}
+.Contentbox1 {
+	margin:0px;
+
+	font: 13px/150% Tahoma,"宋体",Sans-serif;
+	background:#ffffff;
+	border-top:none;
+}
+.Contentbox1 ul{
+margin-bottom:10px;
+width:750px;
+float:left;
+overflow:hidden;
+}
+#list_right{
+margin:10px 0px 10px 10px;
+width:200px;
+float:left;
+}
+.listcp{
+width:198px;
+border:1px solid #EAEAEA;
+float:left;
+}
+.listcp dt{
+padding-left:5px;
+font: 15px/35px "微软雅黑","华文细黑",Tahoma,Sans-serif;
+color:#82B80A;
+width:193px;
+height:35px;
+background-color:#F8F8F8;
+border-bottom:1px solid #eaeaea;
+float:left;
+}
+.listcp dt span{
+color:#CCCCCC;
+}
+.listcp dd{
+text-align:center;
+width:198px;
+height:187px;
+float:left;
+}
+.listcp dd span{
+padding-top:5px;
+font-size:12px;
+text-align:center;
+width:198px;
+height:20px;
+float:left;
+}
+.listcp dd p{
+color:#FF0000;
+padding-top:5px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+width:198px;
+height:32px;
+float:left;
+}
+.rximgo{
+width:198px;
+text-align:center;
+float:left;
+}
+.listcp dd p s{
+font-size:12px;
+color:#CCCCCC;
+}
+.listcp dd p span{
+font-size:12px;
+float:left;
+}
+.listcp dd.rxx{
+margin-bottom:10px;
+height:1px;
+background-image:url("http://www.flyever.com.cn/fly/images/rxy.gif");
+overflow:hidden;
+}
+.listcp dd.gd{
+font-size:12px;
+height:21px;
+}
+.xhs{
+font-size:12px;
+color:#FFF;
+text-decoration:none;
+}
+.xhs:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.gwc{
+width:960px;float:left; margin:10px 0px 0px 0px;
+}
+.gwc table{font-size:12px; text-align:center;}
+.gwc td{padding:5px; height:26px; line-height:25px;}
+.jxgw *{vertical-align:middle;}
+.jxgw,.xggw{
+padding-top:15px;
+text-align:right;
+width:960px;
+height:25px;
+float:left;
+}
+.jxgw{margin-bottom:5px;}
+.xggw{
+text-align:left;
+}
+.jxgw span{float:right;}
+.gwjs *{vertical-align:middle;}
+.gwjs{
+margin-bottom:10px;
+width:958px;
+border:1px solid #e0e0e0;
+float:left;
+}
+.gwjs dt{
+margin-bottom:10px;
+padding-left:5px;
+font: 15px/35px "微软雅黑","华文细黑",Tahoma,Sans-serif;
+color:#82B80A;
+width:953px;
+height:35px;
+background-color:#F8F8F8;
+border-bottom:1px solid #eaeaea;
+float:left;
+}
+.gwjs dt span{color:#999999;}
+.gwjs dd{
+padding-left:20px;
+font-size:14px;
+width:938px;
+height:20px;
+height:50px;
+float:left;
+}
+.gwjs dd.bz{
+height:100px;
+}
+.ddput {
+    padding:3px 0px 0px 5px;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	height: 22px;
+	width: 250px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #55585D;
+	border-right-color: #e0e0e0;
+	border-bottom-color: #e0e0e0;
+	border-left-color: #55585D;
+}
+.gwjs dd span{
+font-size:12px;
+color:#999999;
+}
+.beizhu{
+border:1px solid #e0e0e0;
+width:380px;
+height:80px;
+}
+.tj{
+	margin-top:1px;
+	color:#FFFFFF;
+	width:50px;
+	height:20px;
+	font-size: 12px;
+	text-decoration: none;
+	cursor:pointer;
+}
+#aboutus{
+margin:10px 0px 10px 0px;
+width:958px;
+background:url("http://www.flyever.com.cn/fly/images/usbg.gif") repeat-y;
+border:1px solid #E4E4E4;
+float:left;
+}
+#aboutus ul{
+padding:10px 0px 0px 10px;
+width:198px;
+float:left;
+}
+#aboutus li{list-style:none;}
+#aboutus li a{
+font-family:"微软雅黑";
+font-size:12px;
+color:#333333;
+text-decoration:none;
+padding:7px 0px 0px 20px;
+margin-bottom:10px;
+width:178px;
+height:23px;
+background-image:none;
+float:left;
+}
+#aboutus li a:hover{
+color:#3687BF;
+background:url("http://www.flyever.com.cn/fly/images/ush.jpg") repeat-y;
+}
+#aboutus li a.hover{
+background:url("http://www.flyever.com.cn/fly/images/ush.jpg") repeat-y;
+font-weight:bold;
+}
+#aboutinfo{
+font-size:12px;
+padding:10px;
+width:730px;
+line-height:20px;
+float:left;
+}
+#aboutinfo h1,#aboutinfo h2{
+width:730px;
+height:30px;
+font-size:14px;
+float:left;
+}
+#hblogin{
+padding-left:37px;
+width:693px;
+float:left;
+}
+#hblogin dd{width:202px; height:72px; float:left; margin-right:10px; list-style:none; overflow:hidden;}
+#hblogin dd a{ display:block;width:200px; height:70px; border:1px solid #f7f7f7;}
+#hblogin dd a:hover{border:1px solid #33CC00;}
+
+#cloudpic{
+margin:10px 0px 10px 0px;
+width:960px;
+float:left;
+}
+.denglu{
+width:960px;
+text-align:center;
+overflow:hidden;
+float:left;
+}
+#cloudpic dt,#cloudpic dd{
+font-family:"微软雅黑";
+font-size:16px;
+color:#006600;
+width:960px;
+height:30px;
+float:left;
+}
+
+#cloudpic dd{
+color:#000000;
+}
+#cloudpic ul{
+background:url("http://www.flyever.com.cn/fly/images/cimg.gif") repeat-y;
+padding-left:100px;
+float:left;
+}
+#cloudpic li{
+width:860px;
+height:60px;
+list-style:none;
+float:left;
+}
+#cloudpic li span,#cloudpic li p{
+font-family:"微软雅黑";
+font-size:12px;
+}
+.soft_1{
+width:910px;
+height:100px;
+background-color:#F4F4F4;
+border:1px solid #D9D8D8;
+float:left;
+}
+.soft{
+margin-top:10px;
+width:910px;
+height:100px;
+background-color:#F4F4F4;
+border:1px solid #D9D8D8;
+float:left;
+}
+.soft dt{
+padding-top:20px;
+text-align:center;
+width:100px;
+height:80px;
+float:left;
+}
+.soft dd{
+width:808px;
+float:left;
+}
+.soft dd span{
+margin:5px 0px 5px 0px;
+padding-top:5px;
+width:703px;
+height:25px;
+font-size:14px;
+float:left;
+}
+.soft dd span.xz{
+padding-top:0px;
+width:100px;
+height:30px;
+float:left;
+}
+.soft dd span a{
+color:#000000;
+text-decoration:none;
+}
+.soft dd span a:hover{
+color:#FF0000;
+text-decoration:underline;
+}
+.soft dd p{
+padding-right:10px;
+width:808px;
+height:20px;
+color:#999999;
+font-size:12px;
+float:left;
+}
+.soft dd p.gx{
+text-align:right;
+}
+#chuan{
+padding-left:1px;
+margin:10px 0px 10px 0px;
+width:957px;
+border:1px solid #D9D8D8;
+float:left;
+}
+#chuan dt{
+margin-bottom:10px;
+padding-top:10px;
+text-align:center;
+font-family:"微软雅黑";
+color:#1D7CBC;
+font-size:16px;
+width:957px;
+height:25px;
+float:left;
+}
+#chuan dd{
+text-align:center;
+width:239px;
+height:200px;
+float:left;
+}
+.rimg{
+text-align:center;
+width:239px;
+height:125px;
+float:left;
+}
+#chuan dd p{
+width:239px;
+height:25px;
+padding-top:10px;
+font-family:"微软雅黑";
+font-size:14px;
+float:left;
+}
+.sjjs{
+margin-top:10px;
+width:958px;
+border:1px solid #f0f0f0;
+float:left;
+overflow:hidden;
+}
+.sjjs img{
+float:left;
+}
+.xxy{
+margin-top:8px;
+margin-bottom:8px;
+width:960px;
+background-color:#F0F0F0;
+float:left;
+}
+.ksdg{
+width:960px;
+height:41px;
+background-image:url("http://www.flyever.com.cn/fly/images/ksbg.jpg");
+float:left;
+}
+.ksdg img{
+padding-left:20px;
+}
+.xxy ul{
+font-size:12px;
+padding-left:30px;
+margin-top:20px;
+width:600px;
+height:400px;
+background-color:#F0F0F0;
+
+float:left;
+}
+.xxy ul *{vertical-align:middle;}
+.xxy li{
+width:580px;
+height:35px;
+list-style:none;
+float:left;
+}
+.xxy li span{
+font-size:14px;
+}
+.tjdd { 
+    font-size:14px;
+    padding-left:2px;
+	height: 22px;
+	width: 150px;
+	border: 1px solid #CCCCCC;
+}
+.tjsj { 
+    font-size:14px;
+    padding-left:2px;
+	height: 22px;
+	width: 216px;
+	border: 1px solid #CCCCCC;
+}
+.sl {
+    font-size:14x;
+    padding-left:2px;
+	height: 22px;
+	width: 50px;
+	border: 1px solid #CCCCCC;
+}
+.lxdz{
+    font-size:14px;
+    padding-left:2px;
+	height: 22px;
+	width: 400px;
+	border: 1px solid #CCCCCC;
+}
+.msg {
+    font-size:14px;
+    padding-left:2px;
+	width: 400px;
+	height: 100px;
+	border: 1px solid #CCCCCC;
+}
+.z_line{
+margin-top:20px;
+width:1px;
+height:400px;
+background-image:url("http://www.flyever.com.cn/fly/images/z_line.jpg");
+float:left;
+}
+.bzrx{
+padding:5px;
+font-size:12px;
+width:317px;
+height:400px;
+float:left;
+}
+.bzrx img{
+float:left;
+}
+.bzrx span{
+padding-left:10px;
+margin-top:10px;
+font-size:14px;
+color:#AD0303;
+width:297px;
+float:left;
+}
+.bzrx p{
+padding-left:10px;
+margin-top:10px;
+line-height:20px;
+float:left;
+}
+#newdh{
+margin-top:10px;
+padding:8px 0px 0px 5px;
+width:955px;
+height:27px;
+background-image:url("http://www.flyever.com.cn/fly/images/newdh.jpg");
+float:left;
+}
+#newdh li *{ vertical-align:middle;}
+#newdh li{
+margin-right:10px;
+font-size:14px;
+list-style:none;
+float:left;
+}
+#newdh li a,#newdh a{
+font-family:"微软雅黑";
+font-size:14px;
+color:#666666;
+text-decoration:none;
+}
+#newdh li a:hover,#newdh a:hover{
+font-size:14px;
+color:#FF3300;
+text-decoration:underline;
+}
+#newleft{
+width:650px;
+float:left;
+}
+.jktit{padding:3px 0px 0px 5px;width:910px; height:27px; background-color:#60c8f2; float:left;font-family:"微软雅黑";font-size:16px; font-weight:bold;}
+.jktit span{float:left; padding:0px 5px 0px 5px;}
+.jktit span.yys{border-left:5px solid #9FCD2D;}
+.jktit span.more{float:right;}
+.jkinfo{margin:10px 0px 10px 0px;width:910px;float:left;}
+.jktu{
+padding:10px;
+width:160px;
+border:1px solid #60c8f2;
+float:left;
+}
+.jktu li{list-style:none;float:left;width:160px; height:160px; overflow:hidden;}
+.jktu li p{width:160px;height:120px;float:left; overflow:hidden;}
+.jktu li span{width:160px; height:30px; float:left; text-align:center; overflow:hidden; line-height:30px; font-size:14px;}
+.jktu li span a{color:#666666; text-decoration:none;}
+.jktu li span a:hover{color:#FF3300;}
+.jkxw{width:700px;float:left; margin-left:10px;}
+.jkxw li{padding:10px 0px 0px 15px;width:330px; height:20px; background-color:#f8f8f8; float:left; list-style:none;font-size:14px; background:url("http://www.flyever.com.cn/fly/images/d.gif") no-repeat scroll 1px 8px; overflow:hidden; line-height:20px;}
+.jkxw li a{color:#666666; text-decoration:none;}
+.jkxw li a:hover{color:#FF3300;}
+
+
+.title{
+padding:10px 0px 0px 5px;
+font-family:"微软雅黑";
+font-size:20px;
+width:645px;
+height:31px;
+background-image:url("http://www.flyever.com.cn/fly/images/titlebg.jpg");
+float:left;
+}
+.title a{
+color:#000000;
+text-decoration:none;
+}
+.title a:hover{
+text-decoration:underline;
+}
+.xiangxi{
+font-size:12px;
+width:650px;
+height:35px;
+float:left;
+}
+.xiangxi li *{ vertical-align:middle;}
+.xiangxi li{
+color:#999999;
+list-style:none;
+padding:10px 0px 0px 10px;
+float:left;
+}
+.xwlr{
+margin-bottom:20px;
+padding:5px;
+width:640px;
+float:left;
+}
+.xwlr dt{
+width:160px;
+height:120px;
+border:1px solid #CCCCCC;
+float:right;
+overflow:hidden;
+}
+.xwlr dd{
+padding-top:5px;
+padding-right:8px;
+font-size:14px;
+width:470px;
+height:117px;
+line-height:22px;
+float:left;
+overflow:hidden;
+}
+.xwlr dd.nopic{
+width:630px;
+height:auto;
+}
+.xwlr dd a{
+color:#DD0000;
+text-decoration:none;
+}
+.xwlr dd a:hover{
+text-decoration:underline;
+}
+.biaoqian{
+margin-bottom:10px;
+padding:5px;
+font-size:12px;
+color:#CCCCCC;
+width:640px;
+height:30px;
+background-image:url("http://www.flyever.com.cn/fly/images/xx.gif");
+float:left;
+}
+.biaoqian a{
+margin-right:5px;
+color:#CCCCCC;
+text-decoration:none;
+}
+.biaoqian a:hover{
+color:#FF3300;
+}
+#newright{
+margin-left:10px;
+width:300px;
+float:left;
+}
+.phb{
+margin-bottom:10px;
+width:300px;
+background-color:#FAFAFA;
+float:left;
+}
+.phb dt,.fenyeinfo_lefttitle11 h3,.rmdjph{
+padding:5px 0px 0px 10px;
+width:290px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/phbg.jpg");
+float:left;
+overflow:hidden;
+}
+.phb dt span,.rmdjph span{
+font-weight:bold;
+color:#DF0817;
+}
+.phb dd{
+padding:10px 0px 0px 10px;
+font-size:12px;
+width:290px;
+height:20px;
+float:left;
+}
+.phb dd em{
+padding-top:2px;
+text-align:center;
+font-size:12px;
+font-style:normal;
+display:block;
+width:16px;
+height:14px;
+background-image:url("http://www.flyever.com.cn/fly/images/h.gif");
+float:left;
+}
+.phb dd em.to{
+color:#FFFFFF;
+background-image:url("http://www.flyever.com.cn/fly/images/r.gif");
+}
+.phb dd a{
+display:block;
+width:260px;
+height:20px;
+margin-left:10px;
+color:#333333;
+text-decoration:none;
+line-height:20px;
+float:left;
+overflow:hidden;
+}
+.phb dd a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+#newlistleft{
+margin:10px 0px 10px 0px;
+width:650px;
+float:left;
+}
+.wz{
+width:648px;
+border:1px solid #D3DBE6;
+border-top:3px solid #302E2E;
+float:left;
+}
+.xw{
+padding-top:20px;
+margin:0 auto;
+width:590px;
+overflow:hidden;
+}
+.xw h1{
+text-align:center;
+width:590px;
+font-size:25px;
+float:left;
+}
+.titbar{
+margin-bottom:10px;
+padding-top:10px;
+font-size:12px;
+color:#999999;
+text-align:center;
+width:590px;
+height:30px;
+border-bottom:1px solid #E5E5E5;
+float:left;
+}
+.titbar a{
+color:#0066CC;
+text-decoration:none;
+}
+.titbar a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+#info{
+margin-bottom:10px;
+width:590px;
+font-size:14px;
+line-height:25px;
+float:left;
+}
+#newlistright{
+margin:10px 0px 0px 10px;
+width:300px;
+float:left;
+}
+.pl{
+margin-top:10px;
+width:648px;
+border:1px solid #D3DBE6;
+float:left;
+}
+.pl dt{
+padding:10px 0px 0px 10px;
+width:638px;
+height:20px;
+color:#07519A;
+font-size:12px;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+border-bottom:1px solid #D3DBE6;
+float:left;
+}
+.plk{
+margin:0 auto;
+width:648px;
+}
+.pin{
+padding-top:10px;
+margin:0 auto;
+width:590px;
+height:200px;
+
+}
+.yhm,.pllr,.fb{
+padding-top:10px;
+width:590px;
+font-size:12px;
+width:590px;
+float:left;
+}
+.yhm{
+padding-top:10px;
+width:590px;
+height:20px;
+}
+.fb{
+text-align:right;
+}
+.struser{
+width:120px;
+height:15px;
+border:1px solid #CCCCCC;
+}
+.tex{
+width:588px;
+height:100px;
+border:1px solid #cccccc;
+}
+.liuyan{
+width:648px;
+float:left;
+}
+.liuyan li{
+padding:8px 10px 10px 10px;
+width:628px;
+font-size:14px;
+list-style:none;
+}
+.liuyan li.lou{
+padding-bottom:0px;
+font-size:12px;
+width:628px;
+height:17px;
+background-color:#F4F7FC;
+float:left;
+}
+.propl{
+margin-top:10px;
+padding:10px;
+width:728px;
+border:1px solid #DADADA;
+float:left;
+}
+.propl dt{
+padding-left:25px;
+font-family:"微软雅黑";
+width:703px;
+height:25px;
+background:url("http://www.flyever.com.cn/fly/images/pl.jpg") repeat-y;
+border-bottom:1px solid #dadada;
+float:left;
+}
+.propl dd{width:703px;float:left; padding-top:10px;float:left;}
+.propl dt span{float:left;}
+.propl dt a{float:right;}
+.propl dd span{ display:block;font-size:12px;color:#333333; width:578px;height:30px;float:left; overflow:hidden;}
+.propl dd span.xing{width:125px; height:20px; float:left;} 
+.propl dd p{font-size:12px; color:#666666; border-bottom:1px solid #f7f7f7; padding-bottom:10px;padding-top:5px; width:728px;float:left;}
+.proask dd *{ vertical-align:middle;}
+.propj dd{padding-left:20px; width:680px;}
+.propj dd span{width:555px;}
+.propj dd span.xing{width:125px;}
+.propj dd p{width:688px;}
+.propj dt a{cursor:pointer;}
+.propl dd span em,.propl dd p em{color:#CCCCCC;font-style:normal;}
+.proask dt{
+background:url("http://www.flyever.com.cn/fly/images/ask.jpg") repeat-y;
+}
+.proask dd span{color:#CE3200;}
+#yll{
+width:958px; height:298px; border:1px solid #f0f0f0;float:left; background-image:url("http://www.flyever.com.cn/fly/images/yll.jpg"); margin-top:10px;
+}
+.yfw{
+width:958px; border:1px solid #f0f0f0;float:left; margin-top:10px; background-color:#FCFCFC;
+}
+.yfw dt{
+padding:5px 0px 0px 5px;
+width:953px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+border-bottom:1px solid #f0f0f0; float:left;
+}
+.yfw dd{
+padding-left:2px;
+}
+.ts li{
+padding:10px;
+width:298px;
+height:102px;
+list-style:none;
+float:left;
+overflow:hidden;
+}
+.tsimg{
+margin-right:5px;
+width:100px;
+height:100px;
+border:1px solid #f0f0f0;
+float:left;
+}
+.ts li span{
+padding:5px;
+font-family:"微软雅黑";
+font-size:16px;
+color:#0088CC;
+width:181px;
+height:20px;
+float:left;
+}
+.ts li p{
+padding:5px;
+width:181px;
+height:62px;
+font-size:12px;
+line-height:20px;
+float:left;
+}
+.fwms{
+margin-top:10px;width:958px; border:1px solid #f0f0f0; float:left;
+}
+.fwms dt{
+padding:5px 0px 0px 5px;
+width:953px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+border-bottom:1px solid #f0f0f0; float:left;
+}
+.fwms dd{
+margin-right:2px;
+width:238px;
+float:left;
+}
+.fwms dd.you{
+margin-right:0px;
+}
+.fwmsimg{
+padding-top:10px;
+text-align:center;
+width:238px;
+height:70px;
+float:left;
+}
+.fwms dd span{
+padding-top:5px;
+width:238px;
+height:35px;
+color:#0088CC;
+text-align:center;
+font-family:"微软雅黑";
+font-size:16px;
+float:left;
+}
+.fwms dd p{
+padding:5px 0px 0px 20px;
+width:218px;
+height:20px;
+font-size:12px;
+float:left;
+}
+
+.news_right_dtai{
+width:730px;
+float:left;
+}
+.oz{
+margin-bottom:10px;
+float:left;
+}
+.oz dt{
+padding:1px;
+width:129px;
+height:129px;
+border:1px solid #cccccc;
+float:left;
+overflow:hidden;
+}
+.oz dd{
+padding:5px 0px 5px 10px;
+width:587px;
+height:126px;
+float:left;
+overflow:hidden;
+}
+.Page_box{
+width:730px;
+height:30px;
+float:left;
+}
+.ddtitle{
+margin-bottom:5px;
+width:587px;
+height:20px;
+float:left;
+}
+.ddtitle span{
+margin-right:5px;
+color:#999999;
+}
+.ddtitle a{
+font-size:14px;
+color:#333333;
+text-decoration:none;
+}
+.ddtitle a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.blue{
+color:#CCCCCC;
+}
+.blue a{
+padding:0px 5px 0px 5px;
+color:#0033FF;
+text-decoration:none;
+}
+.blue a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.fenye a{
+padding:0px 5px 0px 5px;
+color:#666666;
+}
+.fenye a:hover{
+color:#FF3300;
+}
+.hdxian{
+margin-bottom:10px;
+width:730px;
+height:1px;
+background-image:url("http://www.flyever.com.cn/fly/images/hdx.gif");
+float:left;
+overflow:hidden;
+}
+
+.fenyeinfo_lefttitle06{ width:600px; overflow:hidden;}
+.fenyeinfo_lefttitle06info{ font-size:14px; line-height:26px; width:600px; overflow:hidden;}
+.fenyeinfo_lefttitle06title{ font-size:20px; margin-bottom:5px; margin-top:20px; font-weight:bold; height:22px; overflow:hidden; text-align:center;}
+.fenyeinfo_lefttitle06time{ color:#888; text-align:center; border-bottom:#CCC dotted 1px; padding-bottom:10px; margin-bottom:10px; }
+.fenyeinfo_lefttitle06daodu{ background:#F4F4F4; border:#ddd dashed 1px; margin:20px 0; padding:10px; color:#555; line-height:22px;}
+.fenyeinfo_tag{ margin-top:30px; background:#fff; border:#ddd dashed 1px;  padding:0 10px; color:#004499; }
+.fenyeinfo_tag a{color:#999999; text-decoration:none;}
+.fenyeinfo_tag a:hover{ color:#FF3300; text-decoration:underline;}
+.fenyeinfo_lefttitle07{ font-size:16px; font-weight:bold; padding-left:20px; margin-top:20px; border-bottom:#999 dotted 1px; padding-bottom:10px;}
+.fenyeinfo_lefttitle07 a,.fenyeinfo_lefttitle07 a:hover,.fenyeinfo_lefttitle08 a,.fenyeinfo_lefttitle08 a:hover{ color:#004499;}
+.fenyeinfo_lefttitle08 { font-size:12px; font-weight:bold; margin-top:20px; }
+.fenyeinfo_lefttitle08 ul li{ height:24px; float:left; width:240px; margin-right:40px; text-indent:10px; overflow:hidden; line-height:24px; font-weight:normal;}
+.fenyeinfo_lefttitle09{ width:600px; overflow:hidden;}
+.fenyeinfo_lefttitle09 ul li{ float:left; width:178px; height:160px; line-height:16px; padding-bottom:10px; display:inline; overflow:hidden; margin:10px;}
+.fenyeinfo_lefttitle09 ul li img{ width:170px; height:120px;margin:4px;}
+.fenyeinfo_lefttitle09001{ border:#ccc dotted 1px; }
+.fenyeinfo_lefttitle09002{ border:#aaa solid 1px; background:#eee; }
+.fenyeinfo_lefttitle09hot{ height:32px; margin-left:5px; margin-right:5px; overflow:hidden;}
+.fenyeinfo_lefttitle11 ul{padding-top:10px; float:left;}
+.fenyeinfo_lefttitle11 ul li{ width:150px; float:left; text-align:left; list-style:none;}
+.fenyeinfo_lefttitle11 ul li p{width:130px; height:100px;margin:0 auto; overflow:hidden;}
+.fenyeinfo_lefttitle11 ul li img{ margin:0 auto;width:130px; height:98px; padding:1px; border:1px solid #f0f0f0; overflow:hidden;}
+.fenyeinfo_lefttitle11 ul li h4{  font-size:12px; font-weight:normal; height:35px;padding:5px 0px 5px 0px; text-align:center; line-height:18px; overflow:hidden;}
+.fenyeinfo_lefttitle11 ul li h4 a{color:#004499; text-decoration:none;}
+.fenyeinfo_lefttitle11 ul li h4 a:hover{ color:#FF3300; text-decoration:underline; }
+
+.fenyeinfo_lefttitle08 h3{
+padding-left:10px;
+font-size:14px;
+}
+#login_name{
+text-align:right;
+font-size:12px;
+}
+#login_name a{
+padding:0px 5px 0px 5px;
+color: #333333;
+text-decoration:none;
+}
+#login_name a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+
+.PartC{
+	background:url("http://www.flyever.com.cn/images/eat_mj_3.gif") no-repeat 0 0;
+	height:283px;
+	margin-top:10px;
+	overflow:hidden;
+	margin-bottom:10px;
+	font-size: 12px;
+}
+
+.PartC .P_Left{width:960px;float:left;overflow:hidden;}
+
+.blk_07 h2{height:58px;}
+.blk_07 h2 .title{float:left;font-size:14px;padding:7px 0 0 0px;}
+.blk_07 .PicList{_display:inline-block;overflow:hidden;padding-left:10px;}
+.blk_07 .PicList .Pic{width:155px;float:left;text-align:center;}
+.blk_07 .PicList .Pic img{border:1px solid #ddd;padding:2px;display:block;}
+.blk_07 .PicList .Pic a:hover img{border:1px solid #ffb911;}
+.blk_07 .PicList .Pic p{padding-top:8px;}
+.keywords { padding:5px;width:290px; background-color:#FAFAFA; float:left;}
+.keywords span{ margin:0 18px 5px 0; padding:2px; display: inline-block;white-space:nowrap;}
+.keywords span.24black { font-size:24px; font-weight:bold}
+.b2 a:link,.b2 a:visited,.b2 a:active {font-size:20px; font-weight:bold; color:#e19003;}
+.b2 a:hover{ color:#FFF; background:#a60a00;font-size:20px; font-weight:bold; text-decoration:none }
+.b4 a:link,.b4 a:visited,.b4 a:active {font-size:18px; font-weight:bold; color:#e19003;}
+.b4 a:hover{ color:#FFF; background:#a60a00;font-size:18px; font-weight:bold; text-decoration:none }
+.b10 a:link,.b10 a:visited,.b10 a:active{  font-size:14px; font-weight:bold; color:#e19003;}
+.b10 a:hover{ color:#FFF; background:#a60a00;font-size:14px; font-weight:bold; text-decoration:none }
+
+.b1 a:link,.b1 a:visited,.b1 a:active{font-size:20px; font-weight:bold; color:#0171d0;}
+.b1 a:hover{ color:#FFF; background:#a60a00;font-size:20px; font-weight:bold; text-decoration:none;}
+.b3 a:link,.b3 a:visited,.b3 a:active {font-size:18px; font-weight:bold; color:#0171d0;}
+.b3 a:hover{ color:#FFF; background:#a60a00;font-size:18px; font-weight:bold; text-decoration:none }
+.b7 a:link,.b7 a:visited,.b7 a:active{ font-size:18px; color:#0171d0;}
+.b7 a:hover{ color:#FFF; background:#a60a00;font-size:18px; text-decoration:none }
+.b8 a:link,.b8 a:visited,.b8 a:active{ font-size:16px; font-weight:bold;  color:#0171d0;}
+.b8 a:hover{ color:#FFF; background:#a60a00;font-size:16px; font-weight:bold; text-decoration:none }
+.b12 a:link,.b12 a:visited,.b12 a:active{ font-size:14px; font-weight:bold;  color:#0171d0;}
+.b12 a:hover{ color:#FFF; background:#a60a00;font-size:14px; font-weight:bold; text-decoration:none }
+
+.b5 a:link,.b5 a:visited,.b5 a:active {font-size:18px; font-weight:bold; color:#000;}
+.b5 a:hover{ color:#FFF; background:#a60a00;font-size:18px; font-weight:bold; text-decoration:none }
+.b6 a:link,.b6 a:visited,.b6 a:active{ font-size:18px; color:#000;}
+.b6 a:hover{ color:#FFF; background:#a60a00;font-size:18px;text-decoration:none }
+.b11 a:link,.b11 a:visited,.b11 a:active {font-size:14px; font-weight:bold; color:#000;}
+.b11 a:hover{ color:#FFF; background:#a60a00;font-size:14px; font-weight:bold; text-decoration:none }
+
+.b9 a:link,.b9 a:visited,.b9 a:active{ font-size:16px; font-weight:bold;  color:#000;}
+.b9 a:hover{ color:#FFF; background:#a60a00;font-size:16px; font-weight:bold; text-decoration:none }
+.b13 a:link,.b13 a:visited,.b13 a:active { font-size:14px; color:#000;}
+#helpleft{
+margin-top:10px;
+width:182px;
+float:left;
+}
+#helpzx{
+width:178px;
+height:70px;
+border-right:2px solid #F1F1F1;
+border-bottom:2px solid #F1F1F1;
+float:left;
+}
+#helpzx p{
+text-align:center;
+padding-top:10px;
+width:176px;
+height:58px;
+border:1px solid #DBDBDB;
+float:left;
+}
+#helpright{
+margin:10px 0px 10px 10px;
+padding-top:20px;
+width:768px;
+float:left;
+}
+#helplb{
+margin:10px 0px 10px 0px;;
+width:178px;
+border-top:2px solid #82B80A;
+border-right:2px solid #F1F1F1;
+border-bottom:2px solid #F1F1F1;
+float:left;
+}
+#helplb dl{
+padding:20px 0px 20px 10px;
+width:166px;
+border-color:#DBDBDB;
+border-style:solid;
+border-width:0px 1px 1px 1px;
+float:left;
+}
+#helplb dt{
+font-size:12px;
+color:#999999;
+}
+#helplb span{color:#006600; font-family:Arial, Helvetica, sans-serif; font-weight:bold; margin-right:5px;}
+#helplb dd{
+padding-top:15px;
+font-size:12px;
+width:166px;
+height:15px;
+list-style:none;
+}
+#helplb dd a{
+color:#666666;
+font-size:12px;
+text-decoration:none;
+}
+#helplb dd a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.helptit{
+padding:15px 0px 0px 5px;
+font-size:12px;
+width:763px;
+height:20px;
+border-bottom:1px solid #E9E9E9;
+float:left;
+}
+.helptit a{
+color: #333333;
+text-decoration:none;
+}
+.helptit a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.helpinfo{
+font-size:12px;
+width:758px;
+padding:5px;
+line-height:25px;
+float:left;
+}
+
+#ztbanner{
+margin:10px 0px 10px 0px;
+width:958px;
+height:148px;
+background-image:url("http://www.flyever.com.cn/fly/images/gxy.jpg");
+border:1px solid #f7f7f7;
+float:left;
+}
+#ztbanner h1{
+width:800px;
+height:50px;
+background-color:#FF9966;
+font-size:19px;
+}
+#ztleft{
+width:300px;
+height:551px;
+float:left;
+}
+#ztleft dl{
+margin-bottom:10px;
+width:300px;
+height:177px;
+float:left;
+}
+#ztleft dl.nbt{
+margin-bottom:0px;
+}
+#ztleft dl dt span{
+padding:1px;
+width:288px;
+height:148px;
+border:1px solid #f7f7f7;
+float:left;
+}
+#ztleft dl dt p{
+width:8px;
+height:152px;
+background-image:url("http://www.flyever.com.cn/fly/images/xyyy.gif");
+float:left;
+}
+#ztleft dl dd{
+padding-top:5px;
+font-size:14px;
+width:300px;
+height:20px;
+text-align:center;
+float:left;
+}
+#ztleft dl dd a{color:#333333; text-decoration:none;}
+#ztleft dl dd a:hover{color:#FF3300; text-decoration:underline;}
+#ztmid{
+padding:5px;
+margin-left:10px;
+width:389px;
+height:541px;
+border-left:1px solid #CCCCCC;
+float:left;
+}
+#ztmid a{color:#000000;}
+#ztright{
+margin-left:10px;
+width:240px;
+height:551px;
+float:left;
+}
+.zt_l_f1{
+width:300px;
+font-size:0px;
+float:left;
+}
+.toutiao{
+margin-bottom:5px;
+width:389px;
+height:100px;
+float:left;
+}
+.toutiao dt{
+padding:5px 0px 0px 9px;
+width:380px;
+height:25px;
+font-size:14px;
+float:left;
+}
+.toutiao dd{
+padding-left:9px;
+font-size:12px;
+color:#999999;
+width:380px;
+line-height:15px;
+float:left;
+overflow:hidden;
+}
+.rhjxy{
+width:389px;
+height:165px;
+float:left;
+overflow:hidden;
+}
+.rhjxy dt{
+padding-left:5px;
+padding-top:5px;
+margin-bottom:3px;
+width:384px;
+height:19px;
+font-size:14px;
+border-bottom:1px solid #F7F7F7;
+float:left;
+}
+.rhjxy dt span{
+height:19px;
+border-bottom:2px solid #CCCCCC;
+}
+.rhjxy dd{
+padding-top:5px;
+padding-left:5px;
+width:384px;
+height:18px;
+font-size:14px;
+float:left;
+}
+#wnkjj{
+width:238px;
+height:260px;
+border:1px solid #F0F0F0;
+float:left;
+}
+#wnkjj dt,.ydzn dt{
+font-size:14px;
+padding:8px 0px 0px 8px;
+width:230px;
+height:23px;
+border-bottom:1px solid #f0f0f0;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+float:left;
+}
+#wnkjj dd{
+width:238px;
+height:228px;
+float:left;
+}
+#wnkjj dd span{
+padding:5px;
+width:228px;
+height:110px;
+float:left;
+}
+#wnkjj dd p{
+padding:5px;
+font-size:12px;
+width:228px;
+height:98px;
+line-height:20px;
+float:left;
+}
+.ydzn{
+margin-top:10px;
+width:238px;
+height:277px;
+border:1px solid #f0f0f0;
+float:left;
+}
+.ydzn dt{
+margin-bottom:5px;
+}
+.ydzn dd{
+padding:2px 0px 0px 5px;
+font-size:12px;
+width:233px;
+line-height:22px;
+height:22px;
+float:left;
+overflow:hidden;
+}
+.ydzn dd a:hover{
+color:#FF3300;
+text-decoration:underline;
+}
+.ydzn dd a {color:#333333;}
+.dxcp{width:960px;float:left; margin:10px 0px 10px 0px;}
+.cx{
+width:710px;
+height:200px;
+float:left;
+}
+.cx dt{
+width:710px;
+height:25px;
+border-bottom:3px solid #F7F7F7;
+float:left;
+}
+.cx dt span{
+font-size:14px;
+width:710px;
+height:24px;
+border-bottom:1px solid #DEDEDE;
+float:left;
+}
+.cx dd{
+width:710px;
+height:172px;
+float:left;
+overflow:hidden;
+}
+.fale{
+margin-left:10px;
+width:238px;
+height:198px;
+background-color:#F7F7F7;
+border:1px solid #f0f0f0;
+float:left;
+overflow:hidden;
+}
+.fale li{
+padding:8px 0px 0px 10px;
+font-size:14px;
+width:228px;
+height:25px;
+float:left;
+}
+.fale li span{
+color:#FF3300;
+}
+.jctp{
+padding:8px 0px 0px 5px;
+font-family:"微软雅黑";
+font-size:14px;
+width:955px;
+height:38px;
+BACKGROUND: url("http://www.flyever.com.cn/fly/images/titlebg.jpg") repeat-x;
+float:left;
+}
+.jcpic{
+margin-bottom:10px;
+width:960px;
+float:left;
+float:left;
+}
+.jcpic li{
+width:192px;
+list-style:none;
+float:left;
+}
+.jcpic li span{
+text-align:center;
+width:192px;
+height:122px;
+float:left;
+overflow:hidden;
+}
+.jcpic li span img{
+border:1px solid #CCCCCC;
+}
+.jcpic li p{
+padding-top:5px;
+font-size:12px;
+text-align:center;
+width:192px;
+height:20px;
+float:left;
+overflow:hidden;
+}
+.jcpic li p a{
+color:#333333;
+text-decoration:underline;
+}
+.jcpic li p a:hover{ color:#FF3300;}
+.grdl{
+width:318px;
+border:1px solid #f0f0f0;
+float:left;
+}
+.grdl dt *{vertical-align:middle;}
+.grdl dt{
+padding:5px 0px 0px 5px;
+width:313px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+border-bottom:1px solid #f0f0f0; float:left;
+}
+.grdl dd{
+padding:10px 0px 0px 10px;
+width:308px;
+height:118px;
+background-color:#f9f8f7;
+float:left;
+}
+.grdlu{
+width:298px;
+height:107px;
+border:1px solid #F0f0f0;
+background-color:#FFFFFF;
+float:left;
+}
+
+.grdlu ul{width:200px;float:left; overflow:hidden;}
+.grdlu ul li *{vertical-align:middle;}
+.grdlu ul li{
+font-size:14px;
+padding:8px 0px 0px 10px;
+width:200px;
+height:28px;
+line-height:21px;
+list-style:none;
+float:left;
+overflow:hidden;
+}
+.gript{
+    padding:3px 0px 0px 5px;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	height: 18px;
+	width: 120px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #55585D;
+	border-right-color: #e0e0e0;
+	border-bottom-color: #e0e0e0;
+	border-left-color: #55585D;
+}
+.gran{width:89px; height:60px;float:left;padding-top:9px; padding-right:6px; text-align:right;}
+
+.grzc{padding:10px 0px 0px 62px;width:200px; height:20px;font-size:12px;float:left; overflow:hidden;}
+
+
+.yunlogin,.ad{
+width:473px;
+height:164px;
+border:1px solid #f0f0f0;
+float:left;
+}
+.yunlogin dt *{vertical-align:middle;}
+.yunlogin dt{
+padding:5px 0px 0px 5px;
+width:468px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/dm.jpg");
+border-bottom:1px solid #f0f0f0; float:left;
+}
+.yunlogin dd{
+padding:10px 0px 0px 10px;
+width:463px;
+height:123px;
+background-color:#f9f8f7;
+float:left;
+}
+.dlu{
+width:451px;
+height:91px;
+border:1px solid #F0f0f0;
+background-color:#FFFFFF;
+float:left;
+}
+.dlu ul{width:333px;float:left;}
+.dlu li *{vertical-align:middle;}
+.dlu li{
+font-size:14px;
+padding:10px 0px 0px 10px;
+width:323px;
+height:30px;
+line-height:28px;
+list-style:none;
+float:left;
+}
+.dlan{margin-top:12px;width:108px; height:67px;float:left;}
+.zcxyh{padding:9px 0px 0px 67px;width:386px; height:20px;font-size:12px;float:left; overflow:hidden;}
+.ad{
+font-size:12px;
+padding:1px;
+width:471px;
+height:162px;
+margin-left:10px;
+}
+.jkpt{
+margin-top:10px;
+width:958px;
+height:98px;
+border:1px solid #F0f0f0;
+float:left;
+}
+.jkyun{
+margin-top:10px;
+width:958px;
+border:1px solid #f0f0f0;
+float:left;
+}
+
+.qiehuan { 
+    margin-top:10px;
+    width:960px;
+    height:100px;
+    overflow:hidden;
+    position:relative;
+	float:left;
+}
+.qiehuan .slider,.qiehuan .num{
+    position:absolute;
+}
+.qiehuan .slider li{
+    list-style:none;
+    display:inline;
+}
+.qiehuan .slider img{
+    width:960px;
+    height:100px;
+    display:block;
+}
+.qiehuan .num{
+    right:5px;
+    bottom:5px;
+}
+.qiehuan .num li{
+    float: left;
+    color: #82B80A;
+    text-align: center;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    font-family: Arial;
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 3px 1px;
+    border: 1px solid #82B80A;
+    background-color: #fff;
+}
+.qiehuan .num li.on{
+    color: #fff;
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+    margin: 0 1px;
+    border: 0;
+    background-color: #82B80A;
+    font-weight: bold;
+}
+#sycp,#zxlr{margin-top:10px;width:960px;float:left;}
+#sycp li,#zxlr li{width:180px; float:left; border:1px solid #f0f0f0;list-style:none; margin-left:10px;padding:1px; overflow:hidden;}
+#zxlr li{border-bottom:0px;}
+#sycp li{height:200px;}
+#zxlr li{padding:11px 0px 0px 11px;width:171px;height:153px;}
+#sycp li.one,#zxlr li.one{margin-left:0px;}
+.zxseo{margin-right:10px;padding:0px 10px 10px 10px;width:162px; border-width:0px 1px 1px 1px; border-color:#f0f0f0; border-style:solid; height:100px; float:left;}
+.zxseono{margin-right:0px;}
+.zxseo li{padding-top:3px;width:162px; height:17px; line-height:20px; font-size:12px; float:left; overflow:hidden;}
+.zxseo li a{color:#666666; text-decoration:none;}
+.zxseo li a:hover{color:#FF3300; text-decoration:underline;}
+.qydlu{width:308px; height:159px; border:1px solid #f1f1f1; margin-right:10px; float:left;}
+.jkzx{
+margin-top:10px;
+width:960px;
+height:100px;
+float:left;
+}
+#zxlr p{width:158px; height:120px; border:1px solid #f0f0f0; float:left;}
+#zxlr span{width:160px; height:30px;font-size:12px; float:left; text-align:center;}
+#zxlr span a{display:block;width:160px; height:20px; background-color:#f9f9f9; padding-top:10px; text-decoration:none; color:#000000;}
+#zxlr span a:hover{ background-color:#F1FCF3; color:#FF0000;}
+.xin{width:960px;height:100px;float:left;margin:10px 0px 10px 0px;}
+.syxw{margin:0px 10px 10px 0px;width:320px; height:185px;background-color:#FAFAFA;float:left;}
+.syxw dt{
+padding:5px 0px 0px 10px;
+width:310px;
+height:25px;
+font-family:"微软雅黑";
+font-size:16px;
+background-image:url("http://www.flyever.com.cn/fly/images/phbg.jpg");
+float:left;
+overflow:hidden;
+}
+.syxw dd{padding:8px 0px 0px 10px;width:310px;height:17px;font-size:12px;float:left; line-height:18px; overflow:hidden;}
+.syxw dd a{color:#333333; text-decoration:none;}
+.syxw dd a:hover{text-decoration:underline; color:#FF0033}
+.syxw dd.zzt{padding:10px;width:300px; height:135px;float:left; text-align:center;}
+.shipin{padding:5px;width:290px; height:175px; background-color:#F4F4F4;float:left;}
+.shipin dt{font-family:"微软雅黑";padding-left:5px;font-size:16px;width:285px; height:24px; background-color:#Fafafa; border-bottom:1px solid #DEDEDE;float:left;}
+.shipin dd{width:290px; height:150px;float:left; overflow:hidden; text-align:center;}
+#jjfa{
+padding:0px 40px 0px 40px;
+margin:10px 0px 10px 0px;
+width:878px;
+border-style:solid;
+border-color:#f0f0f0;
+border-width:0px 1px 1px 1px;
+background:url("http://www.flyever.com.cn/fly/images/titlebg.jpg") 0 0 repeat-x;
+float:left;
+}
+#jjfatit{width:918px; height:66px; float:left; }
+#jjad{
+width:878px;
+height:187px;
+border-top:1px solid #DDDDDD;
+float:left;
+}
+#jjbt{
+width:878px;
+height:85px;
+background-image:url("http://www.flyever.com.cn/fly/images/jjbg.jpg");
+float:left;
+}
+#jjbt li{
+padding:25px 0px 0px 10px;
+height:60px;
+list-style:none;
+float:left;
+}
+
+#jjbt li.xian{
+padding:0px;
+width:1px;
+height:78px;
+background-image:url("http://www.flyever.com.cn/fly/images/xian.jpg");
+float:left;
+overflow:hidden;
+}
+#jjbt li.hover{background:url("http://www.flyever.com.cn/fly/images/jjjt.jpg") repeat-y;}
+#jjbt li p{width:32px; height:32px;float:left;}
+#jjbt li span{padding-left:10px;width:165px; height:32px; float:left; font-size:12px; line-height:16px;}
+#jjbt li span a{ color:#666666; text-decoration:none;}
+#jjbt li span a:hover{color:#990000;}
+#jjfainfo{
+padding:10px 0px 10px 0px;
+width:878px;
+float:left;
+}
+
+.baiduad{
+margin:10px 0px 10px 0px;
+width:920px;
+height:200px;
+float:left;
+}
+.baiduad img{width:445px;}
+.baiduad li{width:455px; height:200px; float:left;list-style:none;}
+.baiduad li.you{margin-left:10px; }
+.baiduad li a{display:block; width:445px; height:198px;border:1px solid #F0F0F0;}
+.baiduad li a:hover{border:1px solid #60c8f2;}
+
+.khdh{
+margin-top:10px;
+width:960px;
+height:25px;
+float:left;
+}
+.khdh li{padding:0px 10px 0px 10px;height:25px; float:left;margin-right:10px; font-family:"微软雅黑"; font-size:14px; text-align:center; list-style:none;cursor:pointer;}
+.khdh li.hover{background-color:#F5F5F5;}
+.khdx{width:960px; height:3px; background-image:url("http://www.flyever.com.cn/fly/images/khdx.jpg"); overflow:hidden; float:left; margin-top:10px;}
+
+.xit{
+margin-top:10px;
+padding:10px;
+width:938px;
+border:1px solid #D9D8D8;
+float:left;
+}
+.xit dt{width:200px; float:left; overflow:hidden;}
+.xit dt p{width:200px; float:left;}
+.xit dt p span{ display:block; padding-top:10px;width:112px; margin:0 auto;}
+.xit dt p span a{display:block; width:112px; height:26px; background:url("http://www.flyever.com.cn/fly/images/dhdl.jpg"); font-family:"微软雅黑";font-size:16px; color:#ffffff; text-align:center; text-decoration:none; padding-top:3px;}
+.xit dt p span a:hover{background:url("http://www.flyever.com.cn/fly/images/dhdl.jpg") 0px 28px;}
+.xit dd{padding-left:10px;width:728px;  float:left;}
+.xit dd span,.xit dd p{width:728px;line-height:25px; float:left;  font-size:12px;}
+.xit dd span{font-size:14px;}
+
+.xxfl{padding:5px;width:915px;margin:10px 0px 10px 0px; border:1px solid #DADADA; float:left;}
+.xxfl dt{margin-bottom:5px;width:915px; line-height:25px; border-bottom:1px solid #f1f1f1; float:left;font-family:"微软雅黑"; font-size:14px; padding-left:5px;}
+.xxfl dd{width:227px; line-height:25px;float:left;font-size:14px;font-family:"微软雅黑"; }
+.xxfl dd a{ padding:0px 5px 0px 5px;display:block; height:25px;color:#333333; text-decoration:none;}
+.xxfl dd a:hover{background-color:#f1f1f1;}
+.xxfl dd a.hover{background-color:#B6D8B7; color:#FFFFFF;}

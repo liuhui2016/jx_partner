@@ -1,0 +1,11 @@
+menu.home=\u9996\u9875
+menu.product=\u4E91\u5065\u5EB7\u4EA7\u54C1
+menu.information=\u5065\u5EB7\u8D44\u8BAF
+menu.download=\u5BA2\u6237\u7AEF\u4E0B\u8F7D
+menu.healthinfo=\u5065\u5EB7\u6307\u6807
+header.chinese=\u4E2D\u6587
+header.english=\u82F1\u6587
+header.register=\u6CE8\u518C
+header.login=\u767B\u9646
+header.exit=\u9000\u51FA
+header.change.password=\u4FEE\u6539\u5BC6\u7801

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:s="http://www.springframework.org/schema/security"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    		http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/security 
+            http://www.springframework.org/schema/security/spring-security.xsd"
+    default-lazy-init="true">
+
+    <description>SpringSecurity安全配置</description>
+
+    <!-- http安全配置 -->
+    <s:http auto-config="true" use-expressions="true">
+        <s:form-login login-page="/login.action" authentication-failure-url="/login.action?error=true"
+            authentication-success-handler-ref="authenticationSuccessHandler" login-processing-url="/securityLogin.action" />
+        <s:logout logout-success-url="/login.action" logout-url="/securityLogout.action" />
+        <s:remember-me user-service-ref="userManager" key="e37f4b31-0c45-11dd-bd0b-0800200c9a66" />
+        <s:custom-filter ref="customizeInterceptor" before="FILTER_SECURITY_INTERCEPTOR" />
+        <!-- 登录拦截处理,不用需注释掉
+            <s:custom-filter ref="customizeLoginInterceptor" before="FORM_LOGIN_FILTER" /> -->
+        <s:anonymous enabled="true" />
+    </s:http>
+
+    <!-- 方法安全配置 -->
+    <s:global-method-security secured-annotations="enabled" />
+
+    <!-- 登录拦截处理,不用需注释掉 -->
+    <bean id="customizeLoginInterceptor" class="com.game.modules.security.springsecurity.CustomizeLoginInterceptor">
+        <property name="authenticationFailureUrl" value="/login.action?iperror=true" />
+        <property name="filterProcessesUrl" value="/securityLogin.action" />
+        <property name="accountManager" ref="accountManager" />
+    </bean>
+
+    <!-- 重新封装FilterSecurityInterceptor,实现运行期'url-授权关'动态配置 -->
+    <bean id="customizeInterceptor" class="com.game.modules.security.springsecurity.CustomizeInterceptor">
+        <property name="authenticationManager" ref="authenticationManager" />
+        <property name="accessDecisionManager" ref="accessDecisionManager" />
+    </bean>
+
+    <!-- 认证配置, 使用userDetailsService提供的用户信息 -->
+    <s:authentication-manager alias="authenticationManager">
+        <s:authentication-provider user-service-ref="userManager">
+            <s:password-encoder ref="passwordEncoder" />
+            <!--<s:password-encoder hash="plaintext" /> -->
+        </s:authentication-provider>
+    </s:authentication-manager>
+
+    <!-- 授权判断配置, 将授权名称的默认前缀由ROLE_改为A_. -->
+    <bean id="accessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+        <property name="allowIfAllAbstainDecisions" value="false"></property>
+        <!-- <constructor-arg> -->
+        <property name="decisionVoters">
+            <list>
+                <bean class="org.springframework.security.access.vote.RoleVoter">
+                    <property name="rolePrefix" value="A_" />
+                </bean>
+                <bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+            </list>
+        </property>
+        <!-- </constructor-arg> -->
+    </bean>
+
+    <!-- 配置登录成功后事件处理 -->
+    <bean id="authenticationSuccessHandler" class="com.game.modules.security.springsecurity.AuthenticationSuccessHandler">
+        <property name="defaultTargetUrl" value="/main.action" />
+        <property name="alwaysUseDefaultTargetUrl" value="true" />
+    </bean>
+
+    <!--JCaptcha验证码服务
+        <bean id="captchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
+        <property name="captchaEngine">
+        <bean class="com.game.modules.security.jcaptcha.GMailEngine" />
+        </property>
+        <property name="minGuarantedStorageDelayInSeconds" value="180" />
+        </bean>
+    -->
+
+</beans>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	id="WebApp_ID">
+
+	<display-name>jx_smart</display-name>
+
+	<!-- Spring ApplicationContext配置文件的路径,可使用通配符,多个路径用,号分隔 此参数用于后面的Spring Context 
+		Loader -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+            classpath*:/applicationContext.xml,
+            classpath*:/applicationContext-*.xml,
+		</param-value>
+	</context-param>
+
+
+	<servlet>
+		<servlet-name>fileupload</servlet-name>
+		<servlet-class>com.game.smvc.controller.FileuploadController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>fileupload</servlet-name>
+		<url-pattern>/smvc/file/fileupload</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- oscache 缓存城市信息 -->
+	<servlet>
+		<servlet-name>InitializeServlet</servlet-name>
+		<servlet-class>com.game.servlet.InitializeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<!-- Content Servlet 配置 -->
+	<servlet>
+		<servlet-name>StaticContentServlet</servlet-name>
+		<servlet-class>com.game.modules.web.servlet.StaticContentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StaticContentServlet</servlet-name>
+		<url-pattern>/static-content</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Filter 定义 -->
+	<!-- Character Encoding filter -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Hibernate Open Session In View filter -->
+	<filter>
+		<filter-name>hibernateOpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>hibernateOpenSessionInViewFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+
+	<!-- SpringSecurity filter -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>struts2Filter</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2Filter</filter-name>
+		<!-- 运营平台 -->
+		<url-pattern>*.action</url-pattern>
+		<!-- 接口 <url-pattern>*</url-pattern> -->
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+
+	<!-- SpringMVC配置 -->
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>*.v</url-pattern>
+	</servlet-mapping>
+	<!-- End SpringMVC配置 -->
+
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>wlps</taglib-uri>
+			<taglib-location>/WEB-INF/tld/wlxm.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+
+
+
+
+
+	<!--Spring的ApplicationContext 载入 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Spring 刷新Introspector防止内存泄露 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<!-- The Quartz initialization listenger which loads the Quartz scheduler. -->
+	<listener>
+		<listener-class>org.quartz.ee.servlet.QuartzInitializerListener</listener-class>
+	</listener>
+
+	<!-- 监听在线用户 -->
+	<listener>
+		<listener-class>com.game.modules.web.listener.UserCounterListener</listener-class>
+	</listener>
+
+	<!-- session超时定义,单位为分钟 -->
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+
+	<!-- 出错页面定义 -->
+
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/common/500.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/common/500.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/common/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/common/403.jsp</location>
+	</error-page>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<!-- 银联支付拦截 -->
+	 
+	 <filter>
+   	 	<filter-name>CharsetEncodingFilter</filter-name>
+    	<filter-class>com.game.util.pay.Unionpay.web.CharsetEncodingFilter</filter-class>
+  	</filter>
+  	
+  <filter-mapping>
+    <filter-name>CharsetEncodingFilter</filter-name>
+    <url-pattern>*.jsp</url-pattern>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+	
+	<servlet>
+		<servlet-name>autoLoadServlet</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.web.AutoLoadServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>autoLoadServlet</servlet-name>
+		<url-pattern>/autoLoadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>frontRcvResponse</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.FrontRcvResponse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>frontRcvResponse</servlet-name>
+		<url-pattern>/frontRcvResponse</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>backRcvResponse</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.BackRcvResponse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>backRcvResponse</servlet-name>
+		<url-pattern>/backRcvResponse</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>form05_6_2_AppConsume</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.Form05_6_2_AppConsume</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form05_6_2_AppConsume</servlet-name>
+		<url-pattern>/form05_6_2_AppConsume</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>form05_6_3_ConsumeUndo</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.Form05_6_3_ConsumeUndo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form05_6_3_ConsumeUndo</servlet-name>
+		<url-pattern>/form05_6_3_ConsumeUndo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>form05_6_4_Refund</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.Form05_6_4_Refund</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form05_6_4_Refund</servlet-name>
+		<url-pattern>/form05_6_4_Refund</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>form05_6_3_Query</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.Form05_6_3_Query</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form05_6_3_Query</servlet-name>
+		<url-pattern>/form05_6_3_Query</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>form05_7_FileTransfer</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.Form05_7_FileTransfer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>form05_7_FileTransfer</servlet-name>
+		<url-pattern>/form05_7_FileTransfer</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>VerifyAppData</servlet-name>
+		<servlet-class>com.game.util.pay.Unionpay.demo.VerifyAppData</servlet-class>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerifyAppData</servlet-name>
+		<url-pattern>/VerifyAppData</url-pattern>
+	</servlet-mapping>
+
+</web-app>
